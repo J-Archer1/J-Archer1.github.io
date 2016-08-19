@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat</title>
+</head>
+	<body>
+	<h1>Julian's chat channel!</h1>
+	<input placeholder="Name" id="name">
+	<input placeholder="Type here..." id="message">
+	<br>
+	<button id="submit" onclick="sendMessage()">Enter</button>
+	<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyAFtHoZ63NwTgtVNy1ExDdR1QxWE_GvxWk",
+	    authDomain: "chat-60818.firebaseapp.com",
+	    databaseURL: "https://chat-60818.firebaseio.com",
+	    storageBucket: "chat-60818.appspot.com",
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	<script src="chatchannel.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</body>
+</html>
