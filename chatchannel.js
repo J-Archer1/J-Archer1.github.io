@@ -7,15 +7,13 @@ function sendMessage(){
 			'message': message,
 		});
 }
-function getData(){
+//function getData(){
 database.on('child_added',function(dataRow){
 	var row = dataRow.val();
-	$('')
+	$('#chatbox').append("<p>" + row.name + " : " + row.message);
 
 
 
 })
+//}
 
-
-
-}
